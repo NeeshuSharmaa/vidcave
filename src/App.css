@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500&family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+.img-div {
+  font-size: 0;
+}
+.column-page-flex {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+.row-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.primary-btn {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  background-color: cornflowerblue;
+  color: white;
+  border: 0;
+}
+.playlist-icon {
+  position: relative;
+}
+.playlist-icon > .fa-icon {
+  width: 25px;
+  height: 25px;
+}
+.playlist-icon > .fa-icon:nth-child(2) {
+  background-color: white;
+  padding: 0.2rem;
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 15px;
+  height: 15px;
+}

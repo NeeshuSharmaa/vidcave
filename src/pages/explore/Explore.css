@@ -1,0 +1,10 @@
+.search-box {
+  padding: 1rem 1.25rem;
+  border: 1px solid lightgray;
+  width: 80%;
+  align-self: center;
+  border-radius: 0.5rem;
+}
+.search-box:focus {
+  outline: 1.25px solid cornflowerblue;
+}

@@ -11,20 +11,25 @@ import Explore from "./pages/explore/Explore";
 import Playlists from "./pages/playlists/Playlists";
 import { ToastContainer } from "react-toastify";
 import Sidebar from "./components/sidebar/Sidebar";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <Sidebar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/category/:id" element={<Category />} />
-        <Route path="/explore" element={<Explore />} />
-        <Route path="/videos/:id" element={<Video />} />
-        <Route path="/playlist" element={<Playlists />} />
-        <Route path="/playlist/:playlistId" element={<Playlist />} />
-        <Route path="/watch-later" element={<WatchLater />} />
-      </Routes>
+      <Navbar />
+      <div className="main">
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/category/:id" element={<Category />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/videos/:id" element={<Video />} />
+          <Route path="/playlists" element={<Playlists />} />
+          <Route path="/playlist/:playlistId" element={<Playlist />} />
+          <Route path="/watch-later" element={<WatchLater />} />
+        </Routes>
+      </div>
+
       <ToastContainer
         position="top-right"
         autoClose={1000}

@@ -1,0 +1,8 @@
+.no-videos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.no-videos > a > button {
+  width: max-content;
+}
