@@ -1,3 +1,40 @@
 .video-container {
   align-self: center;
 }
+.video-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.video-main > .video-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.video-main > .video-info > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.video-main > .video-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.video-notes {
+  border-top: 1px solid lightgray;
+  padding-top: 1rem;
+}
+.video-actions > .clock {
+  width: 25px;
+  height: 25px;
+}
+.video-actions > .playlist-icon > .fa-icon:first-child {
+  width: 25px;
+  height: 25px;
+}
+.video-actions > .playlist-icon > .fa-icon:nth-child(2) {
+  right: -2px;
+  bottom: 8px;
+}

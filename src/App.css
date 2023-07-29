@@ -62,3 +62,39 @@ button {
   background-color: white;
   border: 2px solid cornflowerblue;
 }
+
+.clock {
+  width: 15px;
+  height: 15px;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+.clock:hover {
+  cursor: pointer;
+  background-color: rgb(237, 243, 255);
+}
+.blue {
+  color: cornflowerblue;
+}
+.playlist-icon {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.playlist-icon:hover {
+  cursor: pointer;
+  background-color: rgb(237, 243, 255);
+}
+
+.playlist-icon > .fa-icon {
+  height: 15px;
+  width: 15px;
+}
+.video-action-icons > .playlist-icon > .fa-icon:nth-child(2) {
+  width: 8px;
+  height: 8px;
+  right: 2px;
+  bottom: 6px;
+  padding: 0 0.1rem;
+}
