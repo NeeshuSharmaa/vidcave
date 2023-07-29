@@ -23,6 +23,7 @@ export default function VideoCard({
   const {
     state: { watchLater },
     dispatch,
+    setShowPlaylistModal,
   } = useDataContext();
   const inWatchLater = watchLater.find((ID) => ID === _id);
   return (
@@ -41,7 +42,10 @@ export default function VideoCard({
                 : dispatch({ type: "ADD_TO_WATCH_LATER", payload: _id })
             }
           />
-          <div className="playlist-icon">
+          <div
+            className="playlist-icon"
+            onClick={() => setShowPlaylistModal(true)}
+          >
             <FontAwesomeIcon icon={faBars} className="fa-icon" />
             <FontAwesomeIcon icon={faPlus} className="fa-icon" />
           </div>

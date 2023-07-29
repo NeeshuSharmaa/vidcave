@@ -59,6 +59,11 @@
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
+.video-action-icons > .playlist-icon:hover {
+  cursor: pointer;
+  background-color: rgb(237, 243, 255);
+}
+
 .video-action-icons > .playlist-icon > .fa-icon {
   height: 15px;
   width: 15px;
