@@ -1,4 +1,4 @@
-import { useContext, useReducer } from "react";
+import { useContext, useReducer, useState } from "react";
 import { createContext } from "react";
 import { DataReducer } from "../reducer/DataReducer";
 import { categories, videos } from "../db";
@@ -12,11 +12,14 @@ export default function DataProvider({ children }) {
     allVideos: [...videos],
     categories: [...categories],
     watchLater: [],
-    playlist: [],
+    playlists: [],
+    search: "",
   };
 
   const [state, dispatch] = useReducer(DataReducer, initialState);
-  const values = { state, dispatch };
 
+  const [showPlaylistModal, setShowPlaylistModal] = useState(false);
+  const values = { state, dispatch, showPlaylistModal, setShowPlaylistModal };
+  console.log(showPlaylistModal);
   return <DataContext.Provider value={values}>{children}</DataContext.Provider>;
 }

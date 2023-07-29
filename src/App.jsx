@@ -12,8 +12,11 @@ import Playlists from "./pages/playlists/Playlists";
 import { ToastContainer } from "react-toastify";
 import Sidebar from "./components/sidebar/Sidebar";
 import Navbar from "./components/navbar/Navbar";
+import PlaylistModal from "./components/playlistModal/PlaylistModal";
+import { useDataContext } from "./context/DataProvider";
 
 function App() {
+  const { showPlaylistModal } = useDataContext();
   return (
     <div className="App">
       <Navbar />
@@ -29,6 +32,8 @@ function App() {
           <Route path="/watch-later" element={<WatchLater />} />
         </Routes>
       </div>
+
+      {showPlaylistModal && <PlaylistModal />}
 
       <ToastContainer
         position="top-right"
