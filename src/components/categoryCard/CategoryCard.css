@@ -1,0 +1,11 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: max-content;
+}
+.category > .img-div > img {
+  width: 300px;
+  height: 200px;
+  border-radius: 0.5rem;
+}
