@@ -35,7 +35,7 @@ export default function VideoCard({
         <div className="video-action-icons">
           <FontAwesomeIcon
             icon={inWatchLater ? faClockFour : faClock}
-            className="clock"
+            className={inWatchLater ? "clock blue" : "clock "}
             onClick={() =>
               inWatchLater
                 ? dispatch({ type: "REMOVE_FROM_WATCH_LATER", payload: _id })
